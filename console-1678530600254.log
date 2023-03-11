@@ -1,0 +1,127 @@
+var a ; // variable declare
+undefined
+typeof a;
+'undefined'
+a=10;
+10
+typeof a;
+'number'
+a= "Amit";
+'Amit'
+typeof a;
+'string'
+a = true;
+true
+typeof a;
+'boolean'
+var q = 543534534645654654654645645646456456n;
+undefined
+typeof q;
+'bigint'
+q + 6534645645645756n;
+543534534645654654661180291292102212n
+var a = 10;
+undefined
+a;
+10
+a + 10;
+20
+a;
+10
+a = a + 10;
+20
+var arr= [10,20,30,40,50];
+undefined
+var t  = arr;
+undefined
+t;
+(5) [10, 20, 30, 40, 50]
+t == arr;
+true
+t[0] = 11111;
+11111
+t;
+(5) [11111, 20, 30, 40, 50]
+arr;
+(5) [11111, 20, 30, 40, 50]
+arr;
+(5) [11111, 20, 30, 40, 50]
+var g = [...arr];
+undefined
+g;
+(5) [11111, 20, 30, 40, 50]
+g == arr;
+false
+g[0] =1;
+1
+g;
+(5) [1, 20, 30, 40, 50]
+arr;
+(5) [11111, 20, 30, 40, 50]
+typeof arr;
+'object'
+arr = [10, "Amit", true, [100,200],88n];
+(5) [10, 'Amit', true, Array(2), 88n]
+arr = null;
+null
+typeof arr;
+'object'
+var f = 10;
+undefined
+typeof f;
+'number'
+f = null;
+null
+typeof f;
+'object'
+f=0;
+0
+typeof f;
+
+'number'
+var g1 ;
+undefined
+typeof g1;
+'undefined'
+g1=444;
+444
+undefined == null;
+true
+10 == "10";
+true
+"Amit "+10
+'Amit 10'
+"10" + 20
+'1020'
+undefined + 10
+NaN
+null + 10
+10
+undefined == null;
+true
+undefined === null;
+false
+10 === "10"
+false
+10===10;
+true
+var emp = [1001, "Ram", 99999, 5555, 2222, 201000, "Delhi", "New Delhi", "A-11", 4444, 18, 24];
+undefined
+var emp = {id : 1001, name:"Ram", salary: 9999 };
+undefined
+emp.id;
+1001
+emp['id'];
+1001
+var e = Symbol();
+undefined
+typeof e;
+'symbol'
+e;
+Symbol()
+var gg = Symbol();
+undefined
+gg;
+Symbol()
+e == gg;
+false
