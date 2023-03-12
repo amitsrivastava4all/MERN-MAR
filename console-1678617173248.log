@@ -1,0 +1,236 @@
+function show(){
+    console.log("I am the show ");
+}
+undefined
+show();
+VM181:2 I am the show 
+undefined
+disp();
+function disp(){
+console.log("I am the Disp ");
+}
+VM319:3 I am the Disp 
+undefined
+function output(){
+    // var i;
+    console.log("I is ",i);
+    for(var i = 1; i<=10; i++){
+    console.log("I is ", i):
+    }
+    console.log("I is ", i);
+}
+VM748:5 Uncaught SyntaxError: Unexpected token ':'
+function output(){
+    // var i;
+    console.log("I is ",i);
+    for(var i = 1; i<=10; i++){
+    console.log("I is ", i);
+    }
+    console.log("I is ", i);
+}
+undefined
+output();
+VM758:3 I is  undefined
+VM758:5 I is  1
+VM758:5 I is  2
+VM758:5 I is  3
+VM758:5 I is  4
+VM758:5 I is  5
+VM758:5 I is  6
+VM758:5 I is  7
+VM758:5 I is  8
+VM758:5 I is  9
+VM758:5 I is  10
+VM758:7 I is  11
+undefined
+function output(){
+    // var i;
+    console.log("I is ",i);
+    for(let i = 1; i<=10; i++){
+    console.log("I is ", i);
+    }
+    console.log("I is ", i);
+}
+undefined
+output();
+VM799:3 Uncaught ReferenceError: i is not defined
+    at output (<anonymous>:3:25)
+    at <anonymous>:1:1
+output @ VM799:3
+(anonymous) @ VM823:1
+function output(){
+    // var i;
+    console.log("I is ",i);
+    for(let i = 1; i<=10; i++){
+    console.log("I is ", i);
+    }
+   // console.log("I is ", i);
+}
+undefined
+output();
+VM834:3 Uncaught ReferenceError: i is not defined
+    at output (<anonymous>:3:25)
+    at <anonymous>:1:1
+output @ VM834:3
+(anonymous) @ VM840:1
+function add(){
+    console.log(t);
+    let t = 10;
+    console.log(t);
+}
+undefined
+add();
+VM1021:2 Uncaught ReferenceError: Cannot access 't' before initialization
+    at add (<anonymous>:2:17)
+    at <anonymous>:1:1
+add @ VM1021:2
+(anonymous) @ VM1039:1
+p = 10000;
+10000
+function test(){
+var g  = 10;
+g2 = 1000;    
+}
+undefined
+test();
+undefined
+g;
+VM1183:1 Uncaught ReferenceError: g is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1183:1
+g2;
+1000
+window;
+Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+window.open("www.flipkart.com");
+Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+window.open("https://www.flipkart.com");
+Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+typeof window;
+'object'
+window == this;
+true
+var h = 100; // Global
+undefined
+window.h;
+100
+function show(){
+    console.log("A is ",a);
+    var a= 10;
+    var a = 200;
+}
+undefined
+function show(){
+    console.log("A is ",a);
+    var a= 10;
+    var a = 200;
+    if(a>10){
+    var a = 300;
+}
+console.log("A is ",a);
+}
+undefined
+show();
+VM2166:2 A is  undefined
+VM2166:8 A is  300
+undefined
+function show(){
+    console.log("A is ",a);
+    let a= 10;
+    let a = 200;
+    if(a>10){
+        console.log(" A in If ", a);
+    let a = 300;
+}
+console.log("A is ",a);
+}
+VM2402:4 Uncaught SyntaxError: Identifier 'a' has already been declared
+function show(){
+    console.log("A is ",a);
+    let a= 10;
+    //let a = 200;
+    if(a>10){
+        console.log(" A in If ", a);
+    let a = 300;
+}
+console.log("A is ",a);
+}
+undefined
+show();
+VM2425:2 Uncaught ReferenceError: Cannot access 'a' before initialization
+    at show (<anonymous>:2:25)
+    at <anonymous>:1:1
+show @ VM2425:2
+(anonymous) @ VM2451:1
+function show(){
+    console.log("A is ",a, "R is ",r);
+    let a= 10;
+    //let a = 200;
+    if(a>10){
+        let r = 100;
+        console.log(" A in If ", a);
+    let a = 300;
+}
+console.log("A is ",a);
+}
+undefined
+show();
+VM2551:2 Uncaught ReferenceError: Cannot access 'a' before initialization
+    at show (<anonymous>:2:25)
+    at <anonymous>:1:1
+show @ VM2551:2
+(anonymous) @ VM2571:1
+function show(){
+    console.log("R is ",r);
+    //console.log("A is ",a, "R is ",r);
+    let a= 10;
+    //let a = 200;
+    if(a>10){
+        let r = 100;
+        console.log(" A in If ", a);
+    let a = 300;
+}
+console.log("A is ",a);
+}
+undefined
+show();
+VM2679:2 Uncaught ReferenceError: r is not defined
+    at show (<anonymous>:2:25)
+    at <anonymous>:1:1
+show @ VM2679:2
+(anonymous) @ VM2685:1
+function show(){
+    //console.log("R is ",r);
+    //console.log("A is ",a, "R is ",r);
+    let a= 10;
+    //let a = 200;
+    if(a>10){
+        let r = 100;
+        //console.log(" A in If ", a);
+    let a = 300;
+        console.log("A is In IF ", a);
+}
+console.log("A is ",a);
+}
+undefined
+show();
+VM2844:12 A is  10
+undefined
+function show(){
+    //console.log("R is ",r);
+    //console.log("A is ",a, "R is ",r);
+    let a= 10;
+    //let a = 200;
+    if(a>=10){
+        let r = 100;
+        //console.log(" A in If ", a);
+    let a = 300;
+        console.log("A is In IF ", a);
+}
+console.log("A is ",a);
+}
+undefined
+show();
+VM2884:10 A is In IF  300
+VM2884:12 A is  10
+undefined
