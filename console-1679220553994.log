@@ -1,0 +1,209 @@
+function disp(){
+    console.log("I am the Disp Function ");
+    return "Hello";
+}
+undefined
+disp();
+VM258:2 I am the Disp Function 
+'Hello'
+function disp(var t , var y){
+    var a = 10;
+    a = a + t + y;
+    console.log("I am the Disp Function ");
+    return "Hello "+a;
+}
+VM379:1 Uncaught SyntaxError: Unexpected token 'var'
+function disp( t ,  y){
+    var a = 10;
+    a = a + t + y;
+    console.log("I am the Disp Function ");
+    return "Hello "+a;
+}
+undefined
+disp(10,20);
+VM391:4 I am the Disp Function 
+'Hello 40'
+show();
+function show(){
+    console.log("I am the Show ");
+}
+VM608:3 I am the Show 
+undefined
+window;
+Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+window.show;
+ƒ show(){
+    console.log("I am the Show ");
+}
+show; // window.show
+ƒ show(){
+    console.log("I am the Show ");
+}
+var a = 10;
+undefined
+window.a;
+10
+function calc(){
+    var add = function(x,y){
+        return x + y;
+    }
+    var subtract=function(x,y){
+        return x -y;
+    }
+    return add, subtract;
+}
+undefined
+calc();
+ƒ (x,y){
+        return x -y;
+    }
+function calc(){
+    var add = function(x,y){
+        return x + y;
+    }
+    var subtract=function(x,y){
+        return x -y;
+    }
+    return [add, subtract];
+}
+undefined
+calc()
+(2) [ƒ, ƒ]
+calc()[0](10,20);
+30
+function calc(){
+    var add = function(x,y){
+        return x + y;
+    }
+    var subtract=function(x,y){
+        return x -y;
+    }
+    return {"addition" : add, "subtraction ": subtract};
+}
+undefined
+var e = calc();
+undefined
+typeof e;
+'object'
+e.addition(10,2);
+12
+e.subtraction(10,2);
+VM1492:1 Uncaught TypeError: e.subtraction is not a function
+    at <anonymous>:1:3
+(anonymous) @ VM1492:1
+e;
+{addition: ƒ, "subtraction ": ƒ}addition: ƒ (x,y)arguments: nullcaller: nulllength: 2name: "add"prototype: {constructor: ƒ}[[FunctionLocation]]: VM1370:2[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]"subtraction ": ƒ (x,y)[[Prototype]]: Object
+function calc(){
+    var add = function(x,y){
+        return x + y;
+    }
+    var subtract=function(x,y){
+        return x -y;
+    }
+    return {"addition" : add, "subtraction": subtract};
+}
+undefined
+e.subtraction(10,2);
+VM1552:1 Uncaught TypeError: e.subtraction is not a function
+    at <anonymous>:1:3
+(anonymous) @ VM1552:1
+var e = calc();
+undefined
+e.subtraction(10,2);
+8
+function calc(){
+    var add = function(x,y){
+        return x + y;
+    }
+    var subtract=function(x,y){
+        return x -y;
+    }
+    return {"add two" : add, "subtraction": subtract};
+}
+undefined
+e.subtraction(10,2);
+8
+var e = calc();
+undefined
+e.add two(10,2);
+VM1727:1 Uncaught SyntaxError: Unexpected identifier 'two'
+e.['add two'](10,2);
+VM1768:1 Uncaught SyntaxError: Unexpected token '['
+e['add two'](10,2);
+12
+function calc(){
+    var add = function(x,y){
+        return x + y;
+    }
+    var subtract=function(x,y){
+        return x -y;
+    }
+    return {"add two" : add, "_subtraction": subtract};
+}
+undefined
+var e = calc();
+undefined
+e['_subtraction'](10,2);
+8
+e._subtraction(10,2);
+8
+function calc(){
+    var add = function(x,y){
+        return x + y;
+    }
+    var subtract=function(x,y){
+        return x -y;
+    }
+    return {"add two" : add, "sub-traction": subtract};
+}
+undefined
+var e = calc();
+undefined
+e.sub-traction(10,2);
+VM1955:1 Uncaught ReferenceError: traction is not defined
+    at <anonymous>:1:3
+(anonymous) @ VM1955:1
+e['sub-traction'](10,2);
+8
+var t = 'sub-traction';
+undefined
+e[t](100,200);
+-100
+e.t(100,200);
+VM2170:1 Uncaught TypeError: e.t is not a function
+    at <anonymous>:1:3
+(anonymous) @ VM2170:1
+function calc(){
+    var add = function add(x,y){
+        return x + y;
+    }
+    var subtract=function sub(x,y){
+        return x -y;
+    }
+    return [add, subtract];
+}
+undefined
+calc();
+(2) [ƒ, ƒ]0: ƒ add(x,y)1: ƒ sub(x,y)length: 2[[Prototype]]: Array(0)
+calc()[0](10,20);
+30
+test();
+function test(){
+console.log("I am the Test ");
+}
+VM2541:3 I am the Test 
+undefined
+// var w ;
+console.log(w);
+var w = 100;
+VM2629:2 undefined
+undefined
+w;
+100
+output();
+var output = function(){
+    console.log("Function Expression ");
+}
+VM2788:1 Uncaught TypeError: output is not a function
+    at <anonymous>:1:1
+(anonymous) @ VM2788:1
