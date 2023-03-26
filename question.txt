@@ -1,0 +1,24 @@
+Build a Shopping System.
+
+Where we have 10 Products
+Products are objects
+Product can have id, name , price, brand
+
+Products can be arrange by name or price or brand. (In Asc and Desc)
+
+You need to show total price of all products
+
+Product can be search by Name or Price, search result can 0 to N.
+
+New Product can be add in middle , end , beg
+
+Any Existing product can be delete by name or price.
+Can be delete single or multiple products
+
+Every product has 10% Tax , it need to be show during printing. 
+So the Final price of product can be Price + Tax.
+
+Show the Highest and Lowest Price Product
+
+Show the Sum of all Products whose price is >2000.
+
