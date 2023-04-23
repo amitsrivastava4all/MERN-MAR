@@ -1,0 +1,16 @@
+function giveMoney(money){
+    console.log('money rec ', money);
+    console.log("Marry with hero ");
+}
+function doWork(callBackFn){
+setTimeout(()=>{
+    console.log("Collect the Money ");
+    callBackFn( "Money Bag ");
+}, 4000);
+}
+console.log("Go and Take Money Bag ");
+doWork(giveMoney);
+console.log('Fn Ends');     
+
+
+
